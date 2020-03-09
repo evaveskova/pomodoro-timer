@@ -1,10 +1,18 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <a href="<% root_url %>" class="navbar-container">
+  <div class="container main-navbar-container">
+    <a href="
+      <% root_url %>" class="navbar-container">
       <div class="logo">
         <%= display_svg('tomato.svg') %>
       </div>
       <span class="nav-text">Pomodoro Timer</span>
+    </a>
+    <a class="right-header-link" href="https://github.com/evaveskova/pomodoro-timer"
+       target="_blank" rel="noopener noreferrer">
+      <div class="logo">
+        <%= display_svg('github_white.svg') %>
+      </div>
+      <span class="github-text">Find me on GitHub</span>
     </a>
   </div>
 </header>

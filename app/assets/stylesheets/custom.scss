@@ -11,19 +11,23 @@ $double-margin: 2 * $standard-margin;
   background-color: tomato;
 }
 
-.navbar-container {
+.main-navbar-container {
   display: flex;
   align-items: center;
   margin-top: $standard-margin;
-  width: auto; // TODO fix width
-  background-color: green;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 220px;
   &:hover {
     text-decoration: none;
   }
 }
 
 .logo {
-  width: 32px;
+  width: 32px !important;
 }
 
 .nav-text {
@@ -31,4 +35,15 @@ $double-margin: 2 * $standard-margin;
   font-family: sans-serif;
   font-size: 22px;
   margin-left: $double-margin;
+}
+
+.right-header-link {
+  display: flex;
+  margin-left: auto;
+}
+
+.github-text {
+  color: white;
+  margin-top: $standard-margin;
+  margin-left: $standard-margin;
 }
