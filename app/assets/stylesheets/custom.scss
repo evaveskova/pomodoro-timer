@@ -1,6 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 /* variables */
 $standard-margin: 8px;
 $double-margin: 2 * $standard-margin;
@@ -78,7 +78,7 @@ body {
   font-size: 28px;
   margin-top: 0.5em;
   color: white;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .sub-menu-wrapper ul li:active {
@@ -119,21 +119,48 @@ body {
 }
 
 .start-btn,
-.stop-btn {
+.stop-btn,
+.reset-btn {
   text-align: center;
   font-size: 28px;
-  color: white;
   font-weight: 600;
 }
 
 .stop-btn {
   background-color: #e85f5c;
+  color: white;
 }
 
 .start-btn {
   background-color: #b4ca8b;
+  color: white;
 }
 
 .reset-btn {
-  font-size: 28px;
+  background-color: #c4c4c4;
+  color: black;
+}
+
+.btn-footer {
+  text-align: center;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 8em 0;
+
+  .keyboard {
+    color: #5c5d8d;
+  }
+
+  .start {
+    color: #999999;
+  }
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
 }
