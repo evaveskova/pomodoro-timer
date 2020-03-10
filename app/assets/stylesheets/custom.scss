@@ -1,12 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 /* variables */
 $standard-margin: 8px;
 $double-margin: 2 * $standard-margin;
 
 /* header */
 
+body {
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
 .navbar-inverse {
   background-color: tomato;
 }
@@ -46,4 +50,90 @@ $double-margin: 2 * $standard-margin;
   color: white;
   margin-top: $standard-margin;
   margin-left: $standard-margin;
+}
+
+.wrapper {
+  background-color: #99a1a6;
+  height: 100vh;
+}
+
+.sub-menu-wrapper {
+  position: absolute;
+  width: 1047px;
+  height: 65px;
+  left: 400px;
+  top: 165px;
+  background: #5c5d8d;
+  border-radius: 20px;
+}
+
+.sub-menu-wrapper ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-menu-wrapper ul li {
+  margin-right: 2em;
+  font-size: 28px;
+  margin-top: 0.5em;
+  color: white;
+  font-weight: 500;
+}
+
+.sub-menu-wrapper ul li:active {
+  font-weight: 700;
+}
+
+.timer-wrapper {
+  position: absolute;
+  width: 1056px;
+  height: 569px;
+  left: 400px;
+  top: 260px;
+  background: #ffffff;
+  border-radius: 43px;
+}
+
+.timer p {
+  text-align: center;
+  margin-top: 0.1em;
+  font-weight: 700;
+  font-size: 144px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.timer-btns {
+  display: flex;
+  justify-content: center;
+  margin-left: 2em;
+}
+
+.timer-btns button {
+  margin-right: 2em;
+  width: 199px;
+  border-radius: 40px;
+  height: 45px;
+  border: none;
+}
+
+.start-btn,
+.stop-btn {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  font-weight: 600;
+}
+
+.stop-btn {
+  background-color: #e85f5c;
+}
+
+.start-btn {
+  background-color: #b4ca8b;
+}
+
+.reset-btn {
+  font-size: 28px;
 }
