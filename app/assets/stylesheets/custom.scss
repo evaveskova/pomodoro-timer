@@ -8,7 +8,6 @@ $double-margin: 2 * $standard-margin;
 /* header */
 
 body {
-  overflow: hidden;
   font-family: "Roboto", sans-serif;
 }
 .navbar-inverse {
@@ -22,6 +21,7 @@ body {
 }
 
 .navbar-container {
+  padding: 5px;
   display: flex;
   align-items: center;
   width: 220px;
@@ -54,15 +54,17 @@ body {
 
 .wrapper {
   background-color: #99a1a6;
-  height: 100vh;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub-menu-wrapper {
   position: absolute;
   width: 1047px;
   height: 65px;
-  left: 400px;
-  top: 165px;
+  top: 155px;
   background: #5c5d8d;
   border-radius: 20px;
 }
@@ -81,6 +83,12 @@ body {
   font-weight: 300;
 }
 
+.sub-menu-wrapper ul li:hover {
+  color: tomato;
+  cursor: pointer;
+  font-weight: 700;
+}
+
 .sub-menu-wrapper ul li:active {
   font-weight: 700;
 }
@@ -89,10 +97,10 @@ body {
   position: absolute;
   width: 1056px;
   height: 569px;
-  left: 400px;
   top: 260px;
   background: #ffffff;
   border-radius: 43px;
+  
 }
 
 .timer p {
