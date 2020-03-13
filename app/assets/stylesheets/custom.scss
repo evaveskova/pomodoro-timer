@@ -48,6 +48,9 @@ body {
 .right-header-link {
   display: flex;
   margin-left: auto;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .github-text {
