@@ -96,7 +96,8 @@ body {
 
 .wrapper {
   background-color: #99a1a6;
-  height: 150vh;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,30 +112,30 @@ body {
   top: 155px;
   background: $dark-blue-pomodoro;
   border-radius: 20px;
-}
 
-.sub-menu-wrapper ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
 
-.sub-menu-wrapper ul li {
-  margin-right: 2em;
-  font-size: 28px;
-  margin-top: 0.5em;
-  color: white;
-  font-weight: 300;
-}
+  li {
+    margin-right: 2em;
+    font-size: 28px;
+    margin-top: 0.5em;
+    color: white;
+    font-weight: 300;
+  }
 
-.sub-menu-wrapper ul li:hover {
-  color: tomato;
-  cursor: pointer;
-  font-weight: 700;
-}
+  ul li:hover {
+    color: tomato;
+    cursor: pointer;
+    font-weight: 700;
+  }
 
-.sub-menu-wrapper ul li:active {
-  font-weight: 700;
+  ul li:active {
+    font-weight: 700;
+  }
 }
 
 .timer-wrapper {
