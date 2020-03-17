@@ -180,29 +180,27 @@ body {
 .stop-btn {
   background-color: #e85f5c;
   color: white;
-}
-
-.stop-btn:hover {
-  background-color: red;
-}
-
-.start-btn:hover {
-  background-color: green;
-}
-
-.reset-btn:hover {
-  background-color: black;
-  color: white;
+  &:hover {
+    background-color: red;
+  }
 }
 
 .start-btn {
   background-color: #b4ca8b;
   color: white;
+  &:hover {
+    background-color: green;
+  }
 }
 
 .reset-btn {
   background-color: #c4c4c4;
   color: black;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
 }
 
 .btn-footer {
