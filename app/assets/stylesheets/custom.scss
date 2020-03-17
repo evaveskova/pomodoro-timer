@@ -102,12 +102,11 @@ body {
   align-items: center;
   position: relative;
   top: 0px;
-
 }
 
 .sub-menu-wrapper {
   position: absolute;
-  width: 1047px;
+  width: 80%;
   height: 65px;
   top: 155px;
   background: $dark-blue-pomodoro;
@@ -140,12 +139,11 @@ body {
 
 .timer-wrapper {
   position: absolute;
-  width: 1056px;
+  width: 80%;
   height: 569px;
   top: 260px;
   background: #ffffff;
   border-radius: 43px;
-  
 }
 
 .timer p {
@@ -164,9 +162,9 @@ body {
 }
 
 .timer-btns button {
-  margin-right: 2em;
+  margin-right: 1em;
   width: 199px;
-  border-radius: 40px;
+  border-radius: 15px;
   height: 45px;
   border: none;
 }
@@ -181,6 +179,19 @@ body {
 
 .stop-btn {
   background-color: #e85f5c;
+  color: white;
+}
+
+.stop-btn:hover {
+  background-color: red;
+}
+
+.start-btn:hover {
+  background-color: green;
+}
+
+.reset-btn:hover {
+  background-color: black;
   color: white;
 }
 
