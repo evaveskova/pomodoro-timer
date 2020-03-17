@@ -5,6 +5,7 @@
 $standard-margin: 8px;
 $double-margin: 2 * $standard-margin;
 $dark-blue-pomodoro: #5c5d8d;
+$hover-nav-gray: #f0f0f0;
 
 /* document related rules */
 
@@ -31,6 +32,9 @@ body {
   width: 230px;
   &:hover {
     text-decoration: none;
+    .nav-text {
+      color: $hover-nav-gray;
+    }
   }
 }
 
@@ -48,8 +52,17 @@ body {
 .right-header-link {
   display: flex;
   margin-left: auto;
+  .logo {
+    fill: white;
+  }
   &:hover {
     text-decoration: none;
+    .github-text {
+      color: $hover-nav-gray;
+    }
+    .logo {
+      fill: $hover-nav-gray;
+    }
   }
 }
 
@@ -57,6 +70,15 @@ body {
   color: white;
   margin-top: $standard-margin;
   margin-left: $standard-margin;
+  &:after {
+    content: "\f08e";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: $standard-margin;
+  }
 }
 
 /* home */
