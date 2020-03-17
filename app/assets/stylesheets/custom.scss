@@ -81,6 +81,17 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .nav-text {
+    margin-left: $standard-margin;
+    font-size: 20px;
+  }
+
+  .github-text {
+    display: none;
+  }
+}
+
 /* home */
 
 .wrapper {
@@ -198,6 +209,8 @@ body {
     color: #999999;
   }
 }
+
+/* footer */
 
 .footer {
   position: absolute;
