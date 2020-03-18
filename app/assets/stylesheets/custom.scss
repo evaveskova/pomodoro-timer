@@ -96,56 +96,70 @@ body {
 
 .wrapper {
   background-color: #99a1a6;
-  height: 150vh;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   top: 0px;
-
 }
 
 .sub-menu-wrapper {
   position: absolute;
-  width: 1047px;
+  width: 80%;
   height: 65px;
   top: 155px;
   background: $dark-blue-pomodoro;
   border-radius: 20px;
-}
+  @media (max-width: 575px) {
+    border-radius: 10px;
+  }
 
-.sub-menu-wrapper ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
 
-.sub-menu-wrapper ul li {
-  margin-right: 2em;
-  font-size: 28px;
-  margin-top: 0.5em;
-  color: white;
-  font-weight: 300;
-}
+  li {
+    margin-right: 2em;
+    font-size: 28px;
+    margin-top: 0.5em;
+    color: white;
+    font-weight: 300;
 
-.sub-menu-wrapper ul li:hover {
-  color: tomato;
-  cursor: pointer;
-  font-weight: 700;
-}
+    @media (max-width: 768px) {
+      font-size: 1.2em;
+      margin-right: 1em;
+      text-align: center;
+      margin-top: 1em;
+      font-weight: 600;
+    }
+  }
 
-.sub-menu-wrapper ul li:active {
-  font-weight: 700;
+  ul li:hover {
+    color: tomato;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  ul li:active {
+    font-weight: 700;
+  }
 }
 
 .timer-wrapper {
   position: absolute;
-  width: 1056px;
+  width: 80%;
   height: 569px;
   top: 260px;
   background: #ffffff;
   border-radius: 43px;
-  
+
+  @media (max-width: 768px) {
+    border-radius: 15px;
+  }
 }
 
 .timer p {
@@ -155,20 +169,33 @@ body {
   font-size: 144px;
   color: #000000;
   margin-bottom: 0;
+  @media (max-width: 575px) {
+    font-size: 4em;
+    margin-top: 1em;
+  }
 }
 
 .timer-btns {
   display: flex;
   justify-content: center;
   margin-left: 2em;
+
+  @media (max-width: 768px) {
+    margin-left: 0.5em;
+  }
 }
 
 .timer-btns button {
-  margin-right: 2em;
+  margin-right: 1em;
   width: 199px;
-  border-radius: 40px;
+  border-radius: 10px;
   height: 45px;
   border: none;
+  @media (max-width: 768px) {
+    width: 25%;
+    border-radius: 5px;
+    margin-right: 0.5em;
+  }
 }
 
 .start-btn,
@@ -177,21 +204,35 @@ body {
   text-align: center;
   font-size: 28px;
   font-weight: 600;
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
 }
 
 .stop-btn {
   background-color: #e85f5c;
   color: white;
+  &:hover {
+    background-color: red;
+  }
 }
 
 .start-btn {
   background-color: #b4ca8b;
   color: white;
+  &:hover {
+    background-color: green;
+  }
 }
 
 .reset-btn {
   background-color: #c4c4c4;
   color: black;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
 }
 
 .btn-footer {
@@ -207,6 +248,9 @@ body {
 
   .start {
     color: #999999;
+    @media (max-width: 768px) {
+      margin-right: 0.5em;
+    }
   }
 }
 
