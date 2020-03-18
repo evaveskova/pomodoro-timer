@@ -112,6 +112,9 @@ body {
   top: 155px;
   background: $dark-blue-pomodoro;
   border-radius: 20px;
+  @media (max-width: 575px) {
+    border-radius: 10px;
+  }
 
   ul {
     list-style: none;
@@ -125,6 +128,14 @@ body {
     margin-top: 0.5em;
     color: white;
     font-weight: 300;
+
+    @media (max-width: 768px) {
+      font-size: 1.2em;
+      margin-right: 1em;
+      text-align: center;
+      margin-top: 1em;
+      font-weight: 600;
+    }
   }
 
   ul li:hover {
@@ -145,6 +156,10 @@ body {
   top: 260px;
   background: #ffffff;
   border-radius: 43px;
+
+  @media (max-width: 768px) {
+    border-radius: 15px;
+  }
 }
 
 .timer p {
@@ -154,20 +169,33 @@ body {
   font-size: 144px;
   color: #000000;
   margin-bottom: 0;
+  @media (max-width: 575px) {
+    font-size: 4em;
+    margin-top: 1em;
+  }
 }
 
 .timer-btns {
   display: flex;
   justify-content: center;
   margin-left: 2em;
+
+  @media (max-width: 768px) {
+    margin-left: 0.5em;
+  }
 }
 
 .timer-btns button {
   margin-right: 1em;
   width: 199px;
-  border-radius: 15px;
+  border-radius: 10px;
   height: 45px;
   border: none;
+  @media (max-width: 768px) {
+    width: 25%;
+    border-radius: 5px;
+    margin-right: 0.5em;
+  }
 }
 
 .start-btn,
@@ -176,6 +204,9 @@ body {
   text-align: center;
   font-size: 28px;
   font-weight: 600;
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
 }
 
 .stop-btn {
@@ -217,6 +248,9 @@ body {
 
   .start {
     color: #999999;
+    @media (max-width: 768px) {
+      margin-right: 0.5em;
+    }
   }
 }
 
